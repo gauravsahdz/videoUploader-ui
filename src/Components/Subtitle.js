@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useGlobalContext } from "../context/global";
 import Button from "./Button";
 
 function SubtitleModal({ id, setModal }) {
@@ -8,10 +7,8 @@ function SubtitleModal({ id, setModal }) {
   const [startTimestampValue, setStartTimestampValue] = useState("");
   const [endTimestampValue, setEndTimestampValue] = useState("");
 
-  const [label, setLabel] = React.useState("Upload your video...");
   const [loading, setLoading] = React.useState(false);
 
-  const [timestampValue, setTimestampValue] = useState("");
   const [startTimestampUnit, setStartTimestampUnit] = useState("seconds");
   const [endTimestampUnit, setEndTimestampUnit] = useState("seconds");
 
