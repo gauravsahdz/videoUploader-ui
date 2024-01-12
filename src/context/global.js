@@ -28,8 +28,6 @@ const reducer = (state, action) => {
     default:
       return state;
   }
-
-  return state;
 };
 
 export const GlobalProvider = ({ children }) => {
@@ -44,7 +42,9 @@ export const GlobalProvider = ({ children }) => {
   //get videos
   const getAllVideos = async () => {
     try {
-      const res = await fetch("https://videouploader-api-production.up.railway.app/api/videos");
+      const res = await fetch(
+        "https://videouploader-api-production.up.railway.app/api/videos"
+      );
       const data = await res.json();
 
       dispatch({ type: SET_VIDEOS, payload: data.videos });

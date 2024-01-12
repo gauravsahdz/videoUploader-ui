@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Videos from './Components/Videos'
-import { useGlobalContext } from './context/global';
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import VideoPlayer from './Components/VideoPlayer';
 import { useState } from 'react';
